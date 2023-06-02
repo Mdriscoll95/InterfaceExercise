@@ -73,27 +73,8 @@ namespace InterfaceExercise
             var parkingLot = new List<IVehicle>() { subaru, gmc, macan };
             foreach(var vehicle in parkingLot)
             {
-            if(vehicle is CarClass)
-                {
-                    Console.WriteLine($"make: {vehicle.Make}\n model: {vehicle.Model}\n " +
-                        $"SeatCount: {vehicle.SeatCount}\n  EngineSize: {vehicle.EngineSize}\n" +
-                        $"CompanyName: {vehicle.CompanyName}\n Motto: {vehicle.Motto}\n IsElectric: {subaru.IsElectric}" +
-                        $"TrunkSpace: {subaru.TrunkSpace}");
-                }
-            else if(vehicle is TruckClass)
-                {
-                    Console.WriteLine($"make: {vehicle.Make}\n model: {vehicle.Model}\n " +
-                        $"SeatCount: {vehicle.SeatCount}\n  EngineSize: {vehicle.EngineSize}\n" +
-                        $"CompanyName: {vehicle.CompanyName}\n Motto: {vehicle.Motto}\n bedLength: {gmc.bedLength}" +
-                        $"GasMileage: {gmc.GasMileage}");
-                }
-                else
-                {
-                    Console.WriteLine($"make: {vehicle.Make}\n model: {vehicle.Model}\n " +
-                        $"SeatCount: {vehicle.SeatCount}\n  EngineSize: {vehicle.EngineSize}\n" +
-                        $"CompanyName: {vehicle.CompanyName}\n Motto: {vehicle.Motto}\n IsGas: {macan.IsGas}" +
-                        $"HatchBack: {macan.HatchBack}");
-                }
+              Console.WriteLine($"make: {vehicle.Make}\n model: {vehicle.Model}");
+
             }
             
             
